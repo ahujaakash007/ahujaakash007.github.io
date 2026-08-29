@@ -7,674 +7,649 @@
 <meta name="description" content="Founding-team growth operator. Scaled Kuku TV from $0 to $100M ARR and led its US launch. Bangalore, India.">
 
 <link rel="canonical" href="https://ahujaakash007.github.io/">
-<meta name="theme-color" content="#120E16">
+<meta name="theme-color" content="#FBF7F0">
 
 <!-- Open Graph: controls how the link looks when pasted into LinkedIn / WhatsApp / email -->
 <meta property="og:title" content="Aakash Ahuja — Growth & Performance Creative">
-<meta property="og:description" content="Founding-team growth at Kuku TV. $0 to $100M ARR, $10M/month in paid, and the creative that ran on it.">
+<meta property="og:description" content="Founding-team growth at Kuku TV. $0 to $100M ARR, and the creative that got it there.">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://ahujaakash007.github.io/">
 <meta property="og:site_name" content="Aakash Ahuja">
 <meta property="og:image" content="https://ahujaakash007.github.io/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Aakash Ahuja — growth and performance creative. $100M ARR built from zero.">
+<meta property="og:image:alt" content="Aakash Ahuja — growth is a creative problem. Zero to $100M ARR at Kuku TV.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Aakash Ahuja — Growth & Performance Creative">
-<meta name="twitter:description" content="Founding-team growth at Kuku TV. $0 to $100M ARR, $10M/month in paid, and the creative that ran on it.">
+<meta name="twitter:description" content="Founding-team growth at Kuku TV. $0 to $100M ARR, and the creative that got it there.">
 <meta name="twitter:image" content="https://ahujaakash007.github.io/og.png">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23120E16'/%3E%3Cpath d='M32 12 L48 52 H40 L32 30 L24 52 H16 Z' fill='%23FF3B5C'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23FBF7F0'/%3E%3Cpath d='M32 13 L47 51 H39.5 L32 31 L24.5 51 H17 Z' fill='%23B4552F'/%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,400&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
   :root{
-    --ink:#120E16;
-    --ink-2:#191320;
-    --bone:#F2EBE1;
-    --mute:#9A91A4;
-    --hot:#FF3B5C;
-    --rule:rgba(242,235,225,.14);
+    /* warm editorial paper */
+    --paper:#FBF7F0;
+    --paper-2:#F4EDE1;
+    --ink:#221B16;
+    --ink-2:#4A3E34;
+    --muted:#7A6B5D;
+    --accent:#B4552F;
+    --rule:rgba(34,27,22,.13);
+    --rule-2:rgba(34,27,22,.26);
 
-    --display:"Big Shoulders Display", Impact, sans-serif;
+    --display:"Fraunces", Georgia, "Times New Roman", serif;
     --body:"Newsreader", Georgia, serif;
-    --data:"Courier Prime", "Courier New", monospace;
+    --mono:"Courier Prime", "Courier New", monospace;
 
-    --rail:84px;
-    --pad:clamp(1.25rem, 5vw, 4rem);
+    --container:1180px;
+    --gutter:clamp(1.35rem, 4vw, 3.5rem);
+    --measure:62ch;
   }
 
   *{box-sizing:border-box}
-  html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
+  html{-webkit-text-size-adjust:100%; scroll-behavior:smooth}
   body{
     margin:0;
-    background:var(--ink);
-    color:var(--bone);
+    background:var(--paper);
+    color:var(--ink);
     font-family:var(--body);
-    font-size:clamp(1rem, .96rem + .2vw, 1.09rem);
-    line-height:1.62;
+    font-size:clamp(1.03rem, .99rem + .22vw, 1.15rem);
+    font-weight:400;
+    line-height:1.66;
     -webkit-font-smoothing:antialiased;
-  }
-  body::before{
-    content:"";
-    position:fixed; inset:0 0 auto 0; height:60vh;
-    background:radial-gradient(60% 100% at 50% 0%, rgba(255,59,92,.10), transparent 70%);
-    pointer-events:none; z-index:0;
+    text-rendering:optimizeLegibility;
   }
   a{color:inherit}
-  :focus-visible{outline:2px solid var(--hot); outline-offset:3px}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:1px}
+  ::selection{background:rgba(180,85,47,.18)}
 
-  /* ---------- layout shell ---------- */
-  .shell{position:relative; z-index:1; padding-left:var(--rail)}
-  .wrap{max-width:76ch; margin:0 auto; padding-inline:var(--pad)}
+  /* ---------- layout ---------- */
+  .container{
+    width:100%; max-width:var(--container); margin-inline:auto;
+    padding-inline:var(--gutter);
+  }
+  .measure{max-width:var(--measure)}
 
   /* ---------- top bar ---------- */
   .topbar{
-    position:sticky; top:0; z-index:20;
-    display:flex; justify-content:space-between; align-items:center; gap:1rem;
-    padding:.85rem var(--pad);
-    font-family:var(--data); font-size:.72rem; letter-spacing:.14em; text-transform:uppercase;
-    background:rgba(18,14,22,.78); backdrop-filter:blur(10px);
+    position:sticky; top:0; z-index:30;
+    background:rgba(251,247,240,.88);
+    backdrop-filter:blur(12px) saturate(1.2);
     border-bottom:1px solid var(--rule);
   }
-  .topbar strong{font-weight:700; letter-spacing:.16em}
-  /* grow the tap target to ~44px; the negative margin cancels the padding's
-     effect on layout so the bar keeps its original height */
-  .topbar a{color:var(--mute); text-decoration:none; transition:color .2s; padding-block:.8rem; margin-block:-.8rem}
-  .topbar a:hover{color:var(--hot)}
-  .topbar-links{display:flex; gap:1.25rem}
-
-  /* ---------- the rail (career scrubber) ---------- */
-  .scrubber{
-    position:fixed; top:0; left:0; bottom:0; width:var(--rail);
-    z-index:15; pointer-events:none;
+  .topbar-in{
+    display:flex; align-items:center; gap:1.5rem;
+    padding-block:.9rem;
   }
-  .scrubber-line{
-    position:absolute; top:14vh; bottom:8vh; left:34px; width:1px;
-    background:var(--rule);
+  .wordmark{
+    font-family:var(--display); font-weight:600; font-size:1.06rem;
+    letter-spacing:.005em; text-decoration:none; flex:none;
   }
-  .scrubber-fill{
-    position:absolute; top:0; left:0; width:1px; height:0;
-    background:var(--hot);
-    box-shadow:0 0 10px rgba(255,59,92,.7);
+  .topnav{
+    display:flex; gap:1.6rem; margin-left:auto;
+    font-family:var(--mono); font-size:.7rem;
+    letter-spacing:.16em; text-transform:uppercase;
   }
-  .tick{
-    position:absolute; left:26px; transform:translateY(-50%);
-    display:flex; align-items:center; gap:.55rem;
-    pointer-events:auto; text-decoration:none;
-    font-family:var(--data); font-size:.6rem; letter-spacing:.12em; text-transform:uppercase;
-    color:var(--mute); white-space:nowrap;
+  .topnav a{
+    color:var(--muted); text-decoration:none; position:relative;
+    padding-block:.85rem; margin-block:-.85rem;
     transition:color .25s;
   }
-  .tick i{
-    width:9px; height:9px; flex:none; border-radius:50%;
-    border:1px solid var(--mute); background:var(--ink);
-    transition:background .25s, border-color .25s, transform .25s;
+  .topnav a::after{
+    content:""; position:absolute; left:0; right:0; bottom:-.05rem; height:1px;
+    background:var(--accent); transform:scaleX(0); transform-origin:left;
+    transition:transform .3s ease;
   }
-  .tick span{opacity:0; transform:translateX(-4px); transition:opacity .25s, transform .25s}
-  .tick:hover span, .tick.on span{opacity:1; transform:none}
-  .tick:hover, .tick.on{color:var(--bone)}
-  .tick.on i{background:var(--hot); border-color:var(--hot); transform:scale(1.25)}
+  .topnav a:hover{color:var(--ink)}
+  .topnav a.on{color:var(--accent)}
+  .topnav a.on::after{transform:scaleX(1)}
+
+  /* reading progress, tucked into the bar's own edge */
+  .progress{
+    position:absolute; left:0; bottom:-1px; height:2px; width:0;
+    background:var(--accent); z-index:2;
+  }
 
   /* ---------- hero ---------- */
-  .hero{padding-block:clamp(2.25rem,6vh,3.75rem) clamp(1.25rem,2.5vh,1.75rem)}
+  .hero{padding-block:clamp(3.5rem,11vh,7rem) clamp(2.5rem,6vh,4rem)}
   .eyebrow{
-    font-family:var(--data); font-size:.7rem; letter-spacing:.3em; text-transform:uppercase;
-    color:var(--hot); margin:0 0 .85rem;
+    font-family:var(--mono); font-size:.72rem; font-weight:700;
+    letter-spacing:.26em; text-transform:uppercase;
+    color:var(--accent); margin:0 0 1.5rem;
   }
   .hook{
-    font-family:var(--display); font-weight:800;
-    font-size:clamp(2.9rem, 8.5vw, 6rem);
-    line-height:.94; letter-spacing:.005em; text-transform:uppercase;
-    margin:0 0 1.05rem; text-wrap:balance;
+    font-family:var(--display); font-weight:400;
+    font-size:clamp(3.1rem, 8.2vw, 7rem);
+    line-height:1.0; letter-spacing:-.022em;
+    margin:0 0 1.9rem; max-width:15ch; text-wrap:balance;
+    font-variation-settings:"opsz" 144, "SOFT" 20;
   }
-  .hook em{font-style:normal; color:var(--hot)}
+  .hook em{font-style:italic; color:var(--accent); font-weight:400}
   .standfirst{
-    font-size:clamp(1.1rem,1rem + .6vw,1.35rem);
-    color:var(--bone); max-width:54ch; margin:0;
+    font-size:clamp(1.14rem,1.04rem + .5vw,1.42rem);
+    line-height:1.55; color:var(--ink-2);
+    max-width:50ch; margin:0; font-weight:300;
   }
-  .standfirst .name{font-weight:500}
-  .locale{
-    font-family:var(--data); font-size:.72rem; letter-spacing:.14em; text-transform:uppercase;
-    color:var(--mute); margin:0;
+  .standfirst .name{color:var(--ink); font-weight:500}
+
+  /* ---------- section furniture ---------- */
+  .band{border-top:1px solid var(--rule)}
+  .band-in{padding-block:clamp(2.75rem,6.5vh,4.5rem)}
+  .slabel{
+    font-family:var(--mono); font-size:.68rem; font-weight:700;
+    letter-spacing:.24em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 2rem;
   }
 
-  /* ---------- credits block (the signature) ---------- */
-  .credits{
-    margin:clamp(2.5rem,6vh,3.75rem) 0 0;
-    padding:1.65rem 0 .35rem;
-    border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);
-    font-family:var(--data); font-size:clamp(.72rem,.68rem + .18vw,.84rem);
+  /* ---------- the credit roll (signature) ---------- */
+  .roll{list-style:none; margin:0; padding:0}
+  .roll li{padding-block:1.15rem; border-top:1px solid var(--rule)}
+  .roll li:first-child{border-top:0; padding-top:0}
+  .fig{display:flex; align-items:baseline; gap:.9rem}
+  .fig-k{
+    flex:none; font-family:var(--mono); font-size:.74rem; font-weight:700;
+    letter-spacing:.2em; text-transform:uppercase; color:var(--muted);
   }
-  .credits-label{
-    font-size:.66rem; letter-spacing:.28em; text-transform:uppercase;
-    color:var(--mute); margin:0 0 1.15rem;
+  .fig-dots{
+    flex:1 1 auto; min-width:1.5rem; align-self:center;
+    border-bottom:1px dotted var(--rule-2); transform:translateY(-.15em);
   }
-  .cred{display:flex; align-items:baseline; gap:.6rem; margin-bottom:.85rem}
-  .cred-k{color:var(--mute); text-transform:uppercase; letter-spacing:.1em; flex:none}
-  .cred-d{flex:1 1 auto; min-width:1.5rem; border-bottom:1px dotted rgba(242,235,225,.28); transform:translateY(-.3em)}
-  .cred-v{flex:none; font-weight:700; color:var(--bone); text-align:right}
-  .cred-v b{color:var(--hot); font-weight:700}
+  .fig-v{
+    flex:none; font-family:var(--display); font-weight:500;
+    font-size:clamp(1.9rem,3.6vw,2.9rem); line-height:1;
+    letter-spacing:-.02em; white-space:nowrap;
+    font-variation-settings:"opsz" 96;
+  }
+  .fig-v small{
+    font-family:var(--mono); font-size:.3em; font-weight:700; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--muted); margin-left:.5em;
+  }
+  .roll li.lead .fig-v{color:var(--accent)}
+  .fig-n{
+    margin:.7rem 0 0; color:var(--muted); font-size:.98rem;
+    line-height:1.55; max-width:58ch;
+  }
+  .fig-n b{color:var(--ink); font-weight:500}
 
-  /* ---------- sections ---------- */
-  /* ---------- scoreboard ---------- */
-  .wrap-wide{max-width:1080px; margin:0 auto; padding-inline:var(--pad)}
-  .scoreboard{padding-block:clamp(1rem,2vh,1.5rem) clamp(1.75rem,3.5vh,2.5rem)}
-  .score-grid{
-    display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-    border-top:1px solid var(--rule); border-left:1px solid var(--rule);
+  /* ---------- acts (the roles) ---------- */
+  .act-in{
+    padding-block:clamp(2.75rem,6.5vh,4.5rem);
+    display:grid; grid-template-columns:minmax(0,1fr); gap:1.5rem;
   }
-  .metric{
-    padding:1.2rem 1.25rem 1.15rem;
-    border-bottom:1px solid var(--rule); border-right:1px solid var(--rule);
+  @media (min-width:900px){
+    .act-in{grid-template-columns:11rem minmax(0,1fr); gap:2.5rem}
   }
-  .metric-k{
-    font-family:var(--data); font-size:.63rem; letter-spacing:.24em; text-transform:uppercase;
-    color:var(--mute); margin:0 0 .7rem;
+  @media (min-width:1120px){
+    .act-in{grid-template-columns:15rem minmax(0,1fr); gap:3.5rem}
   }
-  .metric-v{
-    font-family:var(--display); font-weight:800; text-transform:uppercase;
-    font-size:clamp(2.6rem,5.6vw,4.1rem); line-height:.88; letter-spacing:.01em;
-    margin:0 0 .55rem;
+  .act-meta{
+    font-family:var(--mono); font-size:.72rem;
+    letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
+    display:flex; flex-wrap:wrap; gap:.45rem 1.1rem;
   }
-  .metric-v small{font-size:.42em; font-weight:700; letter-spacing:.04em; color:var(--mute); display:inline-block; margin-left:.15em}
-  .metric.lead .metric-v{color:var(--hot)}
-  .metric-n{font-size:.94rem; line-height:1.5; color:var(--mute); margin:0; max-width:30ch}
-  .metric-n b{color:var(--bone); font-weight:500}
+  @media (min-width:900px){
+    .act-meta{flex-direction:column; gap:.55rem; position:sticky; top:5.5rem; align-self:start}
+  }
+  .act-meta .live{color:var(--accent); display:inline-flex; align-items:center; gap:.45rem}
+  .act-meta .live::before{
+    content:""; width:6px; height:6px; border-radius:50%; background:var(--accent);
+    animation:pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.22}}
 
-  .act{padding-block:clamp(2rem,4.5vh,3rem); border-top:1px solid var(--rule)}
-  .act-head{margin-bottom:1.35rem}
-  .slug{
-    font-family:var(--data); font-size:.68rem; letter-spacing:.22em; text-transform:uppercase;
-    color:var(--mute); margin:0 0 .9rem;
-    display:flex; flex-wrap:wrap; gap:.5rem .85rem; align-items:center;
-  }
-  .slug .live{color:var(--hot); display:inline-flex; align-items:center; gap:.4rem}
-  .slug .live::before{
-    content:""; width:6px; height:6px; border-radius:50%; background:var(--hot);
-    animation:pulse 2.2s ease-in-out infinite;
-  }
-  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
   .org{
-    font-family:var(--display); font-weight:700; text-transform:uppercase;
-    font-size:clamp(1.9rem,4.6vw,3.1rem); line-height:1; letter-spacing:.01em;
-    margin:0 0 .35rem;
+    font-family:var(--display); font-weight:400;
+    font-size:clamp(2.1rem,4.6vw,3.4rem); line-height:1.04;
+    letter-spacing:-.02em; margin:0 0 .5rem;
+    font-variation-settings:"opsz" 144;
   }
-  .role{font-family:var(--data); font-size:.78rem; letter-spacing:.1em; color:var(--mute); margin:0 0 .85rem; text-transform:uppercase}
-  .lede{font-size:clamp(1.05rem,1rem + .45vw,1.28rem); font-style:italic; color:var(--bone); margin:0; max-width:48ch}
+  .role{
+    font-family:var(--mono); font-size:.76rem; letter-spacing:.13em;
+    text-transform:uppercase; color:var(--muted); margin:0 0 1.15rem;
+  }
+  .lede{
+    font-family:var(--display); font-style:italic; font-weight:300;
+    font-size:clamp(1.18rem,1.06rem + .55vw,1.5rem); line-height:1.42;
+    color:var(--ink-2); margin:0; max-width:44ch;
+  }
 
-  .strand{margin-top:1.7rem}
+  .strand{margin-top:2.25rem}
   .strand h3{
-    font-family:var(--data); font-weight:700; font-size:.7rem;
-    letter-spacing:.2em; text-transform:uppercase; color:var(--hot);
-    margin:0 0 .85rem; padding-bottom:.5rem; border-bottom:1px solid var(--rule);
+    font-family:var(--mono); font-weight:700; font-size:.68rem;
+    letter-spacing:.22em; text-transform:uppercase; color:var(--muted);
+    margin:0 0 1rem; padding-bottom:.6rem; border-bottom:1px solid var(--rule);
   }
   .strand ul{list-style:none; margin:0; padding:0}
-  .strand li{position:relative; padding-left:1.4rem; margin-bottom:.75rem; max-width:62ch}
+  .strand li{
+    position:relative; padding-left:1.5rem; margin-bottom:.9rem;
+    max-width:var(--measure); color:var(--ink-2);
+  }
   .strand li:last-child{margin-bottom:0}
   .strand li::before{
-    content:""; position:absolute; left:0; top:.72em; width:.7rem; height:1px; background:var(--hot); opacity:.65;
+    content:""; position:absolute; left:0; top:.78em;
+    width:.72rem; height:1px; background:var(--accent); opacity:.8;
   }
-  .strand li b{font-weight:500; color:#fff; border-bottom:1px solid rgba(255,59,92,.45)}
-
-  /* work links — reuses the credits dot-leader language */
-  .reel{margin-top:1.4rem; padding-top:1rem; border-top:1px solid var(--rule)}
-  .reel-label{
-    font-family:var(--data); font-size:.64rem; letter-spacing:.26em; text-transform:uppercase;
-    color:var(--mute); margin:0 0 1rem;
-  }
-  .reel-item{
-    display:flex; align-items:baseline; gap:.6rem;
-    font-family:var(--data); font-size:clamp(.72rem,.68rem + .16vw,.82rem);
-    text-decoration:none; color:var(--bone);
-    padding:.35rem 0; transition:color .2s;
-  }
-  .reel-item:hover{color:var(--hot)}
-  .reel-t{flex:none}
-  .reel-x{flex:1 1 auto; min-width:1.5rem; border-bottom:1px dotted rgba(242,235,225,.28); transform:translateY(-.3em)}
-  .reel-m{flex:none; color:var(--mute); letter-spacing:.1em; text-transform:uppercase; transition:color .2s}
-  .reel-item:hover .reel-m{color:var(--hot)}
-
+  .strand li b{font-weight:500; color:var(--ink); box-shadow:inset 0 -.4em 0 rgba(180,85,47,.14)}
   .ilink{
-    color:var(--bone); text-decoration:none; font-weight:500;
-    border-bottom:1px solid var(--hot); transition:color .2s;
+    color:var(--ink); text-decoration:none; font-weight:500;
+    border-bottom:1px solid var(--accent); transition:color .2s;
   }
-  .ilink:hover{color:var(--hot)}
+  .ilink:hover{color:var(--accent)}
 
-  .card-thumb.is-text{
-    display:grid; place-items:center;
-    background:linear-gradient(150deg, #241A2B, #14101A);
+  /* ---------- work ---------- */
+  .reel{margin-top:2.25rem}
+  .reel-label{
+    font-family:var(--mono); font-size:.66rem; font-weight:700;
+    letter-spacing:.22em; text-transform:uppercase; color:var(--muted);
+    margin:0 0 1.1rem; padding-bottom:.6rem; border-bottom:1px solid var(--rule);
   }
-  .thumb-word{
-    font-family:var(--display); font-weight:800; text-transform:uppercase;
-    font-size:1.6rem; line-height:.95; text-align:center; color:var(--bone);
-    transition:color .25s;
-  }
-  .card:hover .thumb-word{color:var(--hot)}
-
-  .reel-video{
-    width:100%; display:block; margin-top:1.1rem;
-    border:1px solid var(--rule); background:#000; aspect-ratio:16/9; object-fit:cover;
-  }
-  .reel-cap{
-    font-family:var(--data); font-size:.68rem; letter-spacing:.1em; color:var(--mute);
-    margin:.7rem 0 0;
-  }
-
-  /* thumbnail cards for video work */
-  .reelgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:1.1rem; margin-top:1.15rem}
-  .reelgrid.single{grid-template-columns:minmax(0,300px)}
-  .reelgrid.vert{grid-template-columns:repeat(auto-fit,minmax(0,215px)); justify-content:start}
-  .card.vertical .card-thumb{aspect-ratio:9/16}
-  .card.vertical .thumb-word{font-size:2rem}
+  .reelgrid{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:1.5rem}
+  .reelgrid.vert{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}
   .card{display:block; text-decoration:none; color:inherit}
   .card-thumb{
     position:relative; aspect-ratio:16/9; overflow:hidden;
-    border:1px solid var(--rule);
-    background:linear-gradient(150deg,#241A2B,#14101A);
+    background:var(--paper-2); border:1px solid var(--rule);
     transition:border-color .3s;
   }
+  .card.vertical .card-thumb{aspect-ratio:9/16}
   .card-thumb img{
     width:100%; height:100%; object-fit:cover; display:block;
-    filter:grayscale(.4) contrast(1.05); transition:transform .55s ease, filter .4s ease;
+    filter:grayscale(.55) sepia(.14) contrast(1.02);
+    transition:transform .6s ease, filter .45s ease;
   }
-  .card:hover .card-thumb{border-color:var(--hot)}
-  .card:hover img, .card:focus-visible img{transform:scale(1.06); filter:none}
+  .card:hover .card-thumb, .card:focus-visible .card-thumb{border-color:var(--accent)}
+  .card:hover img, .card:focus-visible img{transform:scale(1.04); filter:none}
+  .card-thumb.is-text{display:grid; place-items:center; background:var(--paper-2)}
+  .thumb-word{
+    font-family:var(--display); font-weight:400; font-style:italic;
+    font-size:1.5rem; line-height:1.15; text-align:center; color:var(--muted);
+    transition:color .25s;
+  }
+  .card:hover .thumb-word{color:var(--accent)}
   .play{
     position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
-    width:42px; height:42px; border-radius:50%;
-    background:rgba(18,14,22,.7); border:1px solid rgba(242,235,225,.55);
+    width:44px; height:44px; border-radius:50%;
+    background:rgba(251,247,240,.86); border:1px solid var(--rule-2);
     display:grid; place-items:center;
     transition:background .25s, border-color .25s;
   }
   .play::before{
     content:""; width:0; height:0; margin-left:3px;
-    border-left:11px solid var(--bone);
+    border-left:11px solid var(--ink);
     border-top:7px solid transparent; border-bottom:7px solid transparent;
     transition:border-left-color .25s;
   }
-  .card:hover .play, .card:focus-visible .play{background:var(--hot); border-color:var(--hot)}
-  .card:hover .play::before{border-left-color:#fff}
-  .card-t{
-    font-family:var(--data); font-size:.76rem; letter-spacing:.03em;
-    margin:.75rem 0 .25rem; transition:color .2s;
-  }
-  .card:hover .card-t{color:var(--hot)}
+  .card:hover .play, .card:focus-visible .play{background:var(--accent); border-color:var(--accent)}
+  .card:hover .play::before, .card:focus-visible .play::before{border-left-color:var(--paper)}
+  .card-t{font-size:1rem; font-weight:500; margin:.85rem 0 .2rem; transition:color .2s}
+  .card:hover .card-t{color:var(--accent)}
   .card-c{
-    font-family:var(--data); font-size:.63rem; letter-spacing:.16em; text-transform:uppercase;
-    color:var(--mute); margin:0;
-  }
-
-  .clients{display:flex; flex-wrap:wrap; gap:.45rem; margin:1.1rem 0 0; padding:0; list-style:none}
-  .clients li{
-    font-family:var(--data); font-size:.74rem; letter-spacing:.08em;
-    padding:.4rem .75rem; border:1px solid var(--rule); border-radius:2px; color:var(--bone);
+    font-family:var(--mono); font-size:.64rem; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--muted); margin:0;
   }
 
   /* ---------- end card ---------- */
-  .endcard{background:var(--ink-2); border-top:1px solid var(--rule)}
-  .endcard .wrap{padding-block:clamp(1.75rem,4vh,2.5rem)}
-  .endcard ul{list-style:none; margin:1.1rem 0 0; padding:0}
-  .endcard li{padding-left:1.4rem; position:relative; margin-bottom:.75rem; max-width:60ch; color:var(--bone)}
-  .endcard li:last-child{margin-bottom:0}
-  .endcard li::before{content:""; position:absolute; left:0; top:.72em; width:.7rem; height:1px; background:var(--hot); opacity:.65}
-
-  .contact{padding-block:clamp(2rem,4.5vh,3rem) clamp(2.25rem,5vh,3.25rem)}
-  .contact .hook{font-size:clamp(2.1rem,5.4vw,3.5rem); margin-bottom:1.4rem}
-  .cta-row{display:flex; flex-wrap:wrap; gap:.8rem}
-  .cta{
-    font-family:var(--data); font-size:.8rem; letter-spacing:.12em; text-transform:uppercase;
-    text-decoration:none; padding:.85rem 1.5rem; border:1px solid var(--bone); color:var(--bone);
-    transition:background .2s, color .2s, border-color .2s;
+  .endcard{background:var(--paper-2); border-top:1px solid var(--rule)}
+  .endcard ul{list-style:none; margin:0; padding:0; display:grid; gap:1rem}
+  @media (min-width:760px){ .endcard ul{grid-template-columns:1fr 1fr; gap:1.5rem 3rem} }
+  .endcard li{
+    position:relative; padding-left:1.5rem; color:var(--ink-2); max-width:46ch;
   }
-  .cta:hover{background:var(--bone); color:var(--ink)}
-  .cta.solid{background:var(--hot); border-color:var(--hot); color:#fff}
-  .cta.solid:hover{background:#fff; border-color:#fff; color:var(--ink)}
+  .endcard li::before{
+    content:""; position:absolute; left:0; top:.78em;
+    width:.72rem; height:1px; background:var(--accent); opacity:.8;
+  }
+
+  /* ---------- contact ---------- */
+  .contact-in{padding-block:clamp(3rem,7vh,5rem)}
+  .contact .hook{font-size:clamp(2.3rem,5.4vw,4rem); margin-bottom:2rem; max-width:18ch}
+  .cta-row{display:flex; flex-wrap:wrap; gap:.85rem}
+  .cta{
+    font-family:var(--mono); font-size:.76rem; letter-spacing:.14em; text-transform:uppercase;
+    text-decoration:none; padding:1rem 1.6rem;
+    border:1px solid var(--rule-2); color:var(--ink);
+    transition:background .22s, color .22s, border-color .22s;
+  }
+  .cta:hover{border-color:var(--ink); background:var(--ink); color:var(--paper)}
+  .cta.solid{background:var(--accent); border-color:var(--accent); color:var(--paper)}
+  .cta.solid:hover{background:var(--ink); border-color:var(--ink)}
   .colophon{
-    font-family:var(--data); font-size:.66rem; letter-spacing:.14em; text-transform:uppercase;
-    color:var(--mute); margin-top:1.8rem; padding-top:.9rem; border-top:1px solid var(--rule);
+    font-family:var(--mono); font-size:.66rem; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--muted); margin:2.5rem 0 0; padding-top:1.1rem; border-top:1px solid var(--rule);
   }
 
   /* ---------- entrance ---------- */
-  .rise{opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease}
+  .rise{opacity:0; transform:translateY(14px); transition:opacity .8s ease, transform .8s ease}
   .rise.in{opacity:1; transform:none}
   .hero .rise:nth-child(1){transition-delay:.05s}
-  .hero .rise:nth-child(2){transition-delay:.16s}
-  .hero .rise:nth-child(3){transition-delay:.27s}
-  .hero .rise:nth-child(4){transition-delay:.36s}
-  .hero .rise:nth-child(5){transition-delay:.45s}
+  .hero .rise:nth-child(2){transition-delay:.15s}
+  .hero .rise:nth-child(3){transition-delay:.26s}
 
   /* ---------- mobile ---------- */
-  @media (max-width:900px){
-    .shell{padding-left:0}
-    .scrubber{top:auto; bottom:0; left:0; right:0; width:auto; height:3px; background:var(--rule)}
-    .scrubber-line{display:none}
-    .scrubber-fill{position:absolute; top:0; left:0; height:3px; width:0}
-    .tick{display:none}
-    .cred{flex-wrap:wrap; gap:.15rem .6rem}
-    .cred-v{width:100%; text-align:left; color:var(--bone)}
-    .cred-d{display:none}
-    .reel-x{display:none}
-    .reel-item{flex-wrap:wrap; gap:.1rem .6rem; padding:.5rem 0}
-    .reel-m{width:100%}
+  @media (max-width:720px){
+    .topnav{display:none}
+    .fig{flex-wrap:wrap; gap:.3rem .8rem}
+    .fig-dots{display:none}
+    .fig-v{width:100%; font-size:clamp(2rem,10vw,2.6rem)}
   }
 
   @media (prefers-reduced-motion:reduce){
     html{scroll-behavior:auto}
     .rise{opacity:1; transform:none; transition:none}
-    .slug .live::before{animation:none}
+    .act-meta .live::before{animation:none}
+    .card-thumb img, .topnav a::after{transition:none}
   }
 
   /* ---------- print: recruiters still print things ---------- */
   @media print{
-    body{background:#fff; color:#000; font-size:10.5pt}
-    body::before,.scrubber,.topbar,.cta-row{display:none}
-    .shell{padding-left:0}
-    .wrap{max-width:none; padding:0}
-    .hook,.org{color:#000}
-    .eyebrow,.strand h3,.cred-v b,.slug .live{color:#000}
-    .act{break-inside:avoid; border-top:1px solid #ccc}
+    body{background:#fff; font-size:10.5pt}
+    .topbar,.cta-row,.play,.progress{display:none}
+    .container{max-width:none; padding:0}
+    .act-in{display:block}
+    .act-meta{flex-direction:row; margin-bottom:.5rem}
+    .band-in,.act-in,.contact-in{padding-block:1rem}
     .endcard{background:#fff}
-    .reelgrid{grid-template-columns:repeat(3,1fr); gap:.6rem}
+    .act,.roll li{break-inside:avoid}
     .card-thumb img{filter:none}
-    .play{display:none}
-    .card-t,.card-c{color:#000}
+    .reelgrid{grid-template-columns:repeat(3,1fr); gap:.6rem}
   }
 </style>
 </head>
 <body>
 
-<!-- career scrubber -->
-<nav class="scrubber" aria-label="Section navigation">
-  <div class="scrubber-line"><div class="scrubber-fill" id="fill"></div></div>
-  <a class="tick" href="#kuku" data-sec="kuku"><i></i><span>Now</span></a>
-  <a class="tick" href="#independent" data-sec="independent"><i></i><span>2020</span></a>
-  <a class="tick" href="#tvf" data-sec="tvf"><i></i><span>2018</span></a>
-  <a class="tick" href="#contact" data-sec="contact"><i></i><span>Contact</span></a>
-</nav>
+<header class="topbar">
+  <div class="container topbar-in">
+    <a class="wordmark" href="#top">Aakash Ahuja</a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="#kuku" data-sec="kuku">Kuku TV</a>
+      <a href="#independent" data-sec="independent">Buzzy Tales</a>
+      <a href="#tvf" data-sec="tvf">TVF</a>
+      <a href="#contact" data-sec="contact">Contact</a>
+    </nav>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
 
-<div class="shell">
+<main id="top">
 
-  <header class="topbar">
-    <strong>Aakash Ahuja</strong>
-    <div class="topbar-links">
-      <a href="mailto:ahuja.aakashmail@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/aakash-ahuja-55a30a114/" target="_blank" rel="noopener">LinkedIn</a>
+  <!-- HERO -->
+  <section class="hero container">
+    <p class="eyebrow rise">Growth &amp; performance creative</p>
+    <h1 class="hook rise">Growth is a <em>creative</em> problem.</h1>
+    <p class="standfirst rise"><span class="name">Aakash Ahuja</span> — founding team at Kuku TV, the #1 most downloaded short-drama app in the world, per Sensor Tower. I built the growth engine that took it from zero to $100M ARR, and led the launch into the US.</p>
+  </section>
+
+  <!-- THE FIGURES — set as a credit roll -->
+  <section class="band">
+    <div class="container band-in">
+      <p class="slabel">The figures</p>
+      <ul class="roll">
+
+        <li class="lead">
+          <div class="fig">
+            <span class="fig-k">Revenue built</span>
+            <span class="fig-dots" aria-hidden="true"></span>
+            <span class="fig-v">$100M <small>ARR</small></span>
+          </div>
+          <p class="fig-n">From <b>zero</b>. Kuku TV is now the <b>#1 most downloaded</b> short-drama app in the world, per Sensor Tower.</p>
+        </li>
+
+        <li>
+          <div class="fig">
+            <span class="fig-k">Creative velocity</span>
+            <span class="fig-dots" aria-hidden="true"></span>
+            <span class="fig-v">5,000 <small>ads / month</small></span>
+          </div>
+          <p class="fig-n">Testing at volume is how you find winners. Ship thousands, read the data, <b>scale those that work</b>.</p>
+        </li>
+
+        <li>
+          <div class="fig">
+            <span class="fig-k">Paid budget owned</span>
+            <span class="fig-dots" aria-hidden="true"></span>
+            <span class="fig-v">$10M <small>/ month</small></span>
+          </div>
+          <p class="fig-n">Across Meta, Google, Snapchat and TikTok, in <b>India and the US</b>.</p>
+        </li>
+
+        <li>
+          <div class="fig">
+            <span class="fig-k">Cost to acquire</span>
+            <span class="fig-dots" aria-hidden="true"></span>
+            <span class="fig-v">−80% <small>CAC</small></span>
+          </div>
+          <p class="fig-n">Cut by implementing a <b>new creative strategy</b>.</p>
+        </li>
+
+        <li>
+          <div class="fig">
+            <span class="fig-k">Cost per creative</span>
+            <span class="fig-dots" aria-hidden="true"></span>
+            <span class="fig-v">−90% <small>spend</small></span>
+          </div>
+          <p class="fig-n">An AI production pipeline that <b>5×’d output</b> while cutting what each asset costs to make.</p>
+        </li>
+
+        <li>
+          <div class="fig">
+            <span class="fig-k">Content commissioned</span>
+            <span class="fig-dots" aria-hidden="true"></span>
+            <span class="fig-v">$6.5M <small>/ year</small></span>
+          </div>
+          <p class="fig-n">Deployed into original programming that <b>topped the charts</b> and pulled subscribers in.</p>
+        </li>
+
+      </ul>
     </div>
-  </header>
+  </section>
 
-  <main>
-
-    <!-- HERO -->
-    <section class="hero wrap">
-      <p class="eyebrow rise">Growth &amp; performance creative</p>
-      <h1 class="hook rise">Most growth leads can read the dashboard. Few can <em>make the creative</em> that moves it.</h1>
-      <p class="standfirst rise"><span class="name">Aakash Ahuja</span> — founding team at Kuku TV, the #1 most downloaded short-drama app in the world, per Sensor Tower. I built the growth engine that took it from zero to $100M ARR, and led the launch into the US.</p>
-    </section>
-
-    <!-- SCOREBOARD -->
-    <section class="scoreboard wrap-wide">
-      <div class="score-grid">
-
-        <div class="metric lead">
-          <p class="metric-k">Revenue built</p>
-          <p class="metric-v">$100M <small>ARR</small></p>
-          <p class="metric-n">From <b>zero</b>. Kuku TV is now the <b>#1 most downloaded</b> short-drama app in the world, per Sensor Tower.</p>
-        </div>
-
-        <div class="metric lead">
-          <p class="metric-k">Creative velocity</p>
-          <p class="metric-v">5,000 <small>ads / month</small></p>
-          <p class="metric-n">Testing at volume is how you find winners. Ship thousands, read the data, <b>scale those that work</b>.</p>
-        </div>
-
-        <div class="metric">
-          <p class="metric-k">Paid budget owned</p>
-          <p class="metric-v">$10M <small>/ month</small></p>
-          <p class="metric-n">Across Meta, Google, Snapchat and TikTok, in <b>India and the US</b>.</p>
-        </div>
-
-        <div class="metric">
-          <p class="metric-k">Cost to acquire</p>
-          <p class="metric-v">−80% <small>CAC</small></p>
-          <p class="metric-n">Cut by implementing a <b>new creative strategy</b>.</p>
-        </div>
-
-        <div class="metric">
-          <p class="metric-k">Cost per creative</p>
-          <p class="metric-v">−90% <small>spend</small></p>
-          <p class="metric-n">An AI production pipeline that <b>5×'d output</b> while cutting what each asset costs to make.</p>
-        </div>
-
-        <div class="metric">
-          <p class="metric-k">Content commissioned</p>
-          <p class="metric-v">$6.5M <small>/ year</small></p>
-          <p class="metric-n">Deployed into original programming that <b>topped the charts</b> and pulled subscribers in.</p>
-        </div>
-
+  <!-- KUKU TV -->
+  <section class="band act" id="kuku">
+    <div class="container act-in">
+      <div class="act-meta">
+        <span class="live">On air</span>
+        <span>Aug 2024 — present</span>
+        <span>Founding team</span>
       </div>
-    </section>
-
-    <!-- KUKU TV -->
-    <section class="act wrap" id="kuku">
-      <div class="act-head">
-        <p class="slug"><span class="live">On air</span><span>Aug 2024 — present</span><span>Founding team</span></p>
+      <div class="act-body">
         <h2 class="org">Kuku TV</h2>
         <p class="role">Director, Growth &amp; Marketing</p>
         <p class="lede">I own the full growth engine across India, and I led the US launch.</p>
-      </div>
 
-      <div class="strand">
-        <h3>Growth &amp; performance</h3>
-        <ul>
-          <li>Reduced CAC by <b>80% by implementing a new creative strategy</b>. The lever was never the bidding — it was what the ad said in the first three seconds.</li>
-          <li>Built and lead the growth function from the first hire: in-house performance marketers plus external agencies, running acquisition across Meta, Google and Snapchat.</li>
-          <li>Own the commissioning calls on the content slate — which shows get made, judged against what the acquisition data says audiences actually finish.</li>
-          <li>Set the India playbook, then rebuilt it for the US rather than porting it over.</li>
-        </ul>
-      </div>
+        <div class="strand">
+          <h3>Growth &amp; performance</h3>
+          <ul>
+            <li>Reduced CAC by <b>80% by implementing a new creative strategy</b>. The lever was never the bidding — it was what the ad said in the first three seconds.</li>
+            <li>Built and lead the growth function from the first hire: in-house performance marketers plus external agencies, running acquisition across Meta, Google and Snapchat.</li>
+            <li>Own the commissioning calls on the content slate — which shows get made, judged against what the acquisition data says audiences actually finish.</li>
+            <li>Set the India playbook, then rebuilt it for the US rather than porting it over.</li>
+          </ul>
+        </div>
 
-      <div class="strand">
-        <h3>Creative as the growth lever</h3>
-        <ul>
-          <li>Operate at a volume of <b>5,000 ad creatives a month</b>. Ship wide, kill fast, scale those that work — testing velocity is the strategy, not a side effect of it.</li>
-          <li>Architected the AI creative pipeline behind that volume — Midjourney, Runway ML, Flux, ElevenLabs — so output scales without the team scaling with it.</li>
-          <li>Head AI content creation for the platform: a fully AI-generated delivery pipeline that halved production time and cut content spend <b>75%</b>.</li>
-        </ul>
-        <div class="reel">
-          <p class="reel-label">Made with the pipeline</p>
+        <div class="strand">
+          <h3>Creative as the growth lever</h3>
+          <ul>
+            <li>Operate at a volume of <b>5,000 ad creatives a month</b>. Ship wide, kill fast, scale those that work — testing velocity is the strategy, not a side effect of it.</li>
+            <li>Architected the AI creative pipeline behind that volume — Midjourney, Runway ML, Flux, ElevenLabs — so output scales without the team scaling with it.</li>
+            <li>Head AI content creation for the platform: a fully AI-generated delivery pipeline that halved production time and cut content spend <b>75%</b>.</li>
+          </ul>
 
-          <div class="reelgrid vert">
-            <a class="card vertical" href="https://www.youtube.com/shorts/qmeNsugOfPU" target="_blank" rel="noopener">
-              <div class="card-thumb">
-                <img src="https://img.youtube.com/vi/qmeNsugOfPU/hqdefault.jpg" data-yt="qmeNsugOfPU"
-                     alt="Jungle King trailer" loading="lazy" referrerpolicy="no-referrer">
-                <span class="play" aria-hidden="true"></span>
-              </div>
-              <p class="card-t">Jungle King — trailer</p>
-              <p class="card-c">Made with the AI pipeline</p>
-            </a>
-            <a class="card vertical" href="https://www.linkedin.com/posts/kukutv_kukutv-kuku-ai-ugcPost-7476513695947202560-wBMA?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAByFqpYBaIJRu7TyzQNZJWKHi4XFgwdOmt8" target="_blank" rel="noopener">
-              <div class="card-thumb is-text">
-                <span class="thumb-word">Read<br>more</span>
-              </div>
-              <p class="card-t">Read more about the AI show</p>
-              <p class="card-c">LinkedIn · Kuku TV</p>
-            </a>
+          <div class="reel">
+            <p class="reel-label">Made with the pipeline</p>
+            <div class="reelgrid vert">
+              <a class="card vertical" href="https://www.youtube.com/shorts/qmeNsugOfPU" target="_blank" rel="noopener">
+                <div class="card-thumb">
+                  <img src="https://img.youtube.com/vi/qmeNsugOfPU/hqdefault.jpg" data-yt="qmeNsugOfPU"
+                       alt="Jungle King trailer" loading="lazy" referrerpolicy="no-referrer">
+                  <span class="play" aria-hidden="true"></span>
+                </div>
+                <p class="card-t">Jungle King — trailer</p>
+                <p class="card-c">Made with the AI pipeline</p>
+              </a>
+              <a class="card vertical" href="https://www.linkedin.com/posts/kukutv_kukutv-kuku-ai-ugcPost-7476513695947202560-wBMA?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAByFqpYBaIJRu7TyzQNZJWKHi4XFgwdOmt8" target="_blank" rel="noopener">
+                <div class="card-thumb is-text">
+                  <span class="thumb-word">Read<br>more</span>
+                </div>
+                <p class="card-t">Read more about the AI show</p>
+                <p class="card-c">LinkedIn · Kuku TV</p>
+              </a>
+            </div>
           </div>
+
+          <!-- To swap in the LinkedIn video instead of the cards above: save it as
+               work/ai-pipeline.mp4 (and optionally a still as work/ai-pipeline.jpg),
+               then replace the .reelgrid above with:
+               <video class="reel-video" controls playsinline preload="metadata"
+                      poster="work/ai-pipeline.jpg" style="width:100%;border:1px solid var(--rule)">
+                 <source src="work/ai-pipeline.mp4" type="video/mp4">
+               </video> -->
         </div>
 
-        <!--
-        TO EMBED THE LINKEDIN VIDEO:
-        1. Download the video from your own LinkedIn post.
-        2. Save it in the repo as  work/ai-pipeline.mp4
-           (optional: a still frame as  work/ai-pipeline.jpg  for the poster)
-        3. Delete the <div class="reel"> block just above, then delete these
-           comment markers so the block below goes live.
-
-        <div class="reel">
-          <p class="reel-label">The pipeline, running</p>
-          <video class="reel-video" controls playsinline preload="metadata" poster="work/ai-pipeline.jpg">
-            <source src="work/ai-pipeline.mp4" type="video/mp4">
-          </video>
-          <p class="reel-cap">The AI content pipeline behind 5,000 creatives a month.</p>
+        <div class="strand">
+          <h3>US market entry</h3>
+          <ul>
+            <li>Led the US launch across Meta, Google, Snapchat and TikTok, for both Kuku TV and Kuku FM.</li>
+            <li>Built an organic influencer engine driving installs at <b>near-zero CPA</b>.</li>
+            <li>Closed content licensing deals across China, Spain and Indonesia.</li>
+          </ul>
         </div>
-        -->
       </div>
+    </div>
+  </section>
 
-      <div class="strand">
-        <h3>US market entry</h3>
-        <ul>
-          <li>Led the US launch across Meta, Google, Snapchat and TikTok, for both Kuku TV and Kuku FM.</li>
-          <li>Built an organic influencer engine driving installs at <b>near-zero CPA</b>.</li>
-          <li>Closed content licensing deals across China, Spain and Indonesia.</li>
-        </ul>
+  <!-- BUZZY TALES -->
+  <section class="band act" id="independent">
+    <div class="container act-in">
+      <div class="act-meta">
+        <span>Jul 2020 — Jul 2024</span>
+        <span>Founder</span>
       </div>
-    </section>
-
-    <!-- INDEPENDENT -->
-    <section class="act wrap" id="independent">
-      <div class="act-head">
-        <p class="slug"><span>Jul 2020 — Jul 2024</span><span>Founder</span></p>
+      <div class="act-body">
         <h2 class="org">Buzzy Tales Creative Agency</h2>
         <p class="role">Founder · Brand &amp; performance creative</p>
         <p class="lede">Four years running my own shop, working on brand and creative campaigns.</p>
-      </div>
 
-      <div class="strand">
-        <ul>
-          <li>Built and ran <b>Buzzy Tales</b> end to end: pitching, staffing, and shipping brand and performance campaigns for <b>Amazon Prime Video, Krafton, Realme, AMD and Junglee Poker</b>.</li>
-          <li>Creative lead on <b>YouTube Fan Fest India 2024</b> — 10M+ organic impressions, 300K+ concurrent viewers.</li>
-          <li>Ran a global creative and marketing team across the US, Netherlands and India for FHD Media. Scaled their YouTube channel from <b>600K to 1.2M subscribers in six months</b>.</li>
-        </ul>
-        <div class="reel">
-          <p class="reel-label">Selected work</p>
-          <div class="reelgrid">
-            <a class="card" href="https://www.youtube.com/watch?v=C47xBYRls9g" target="_blank" rel="noopener">
-              <div class="card-thumb">
-                <img src="https://img.youtube.com/vi/C47xBYRls9g/hqdefault.jpg" data-yt="C47xBYRls9g" alt="YouTube Fan Fest India 2024"
-                     loading="lazy" referrerpolicy="no-referrer">
-                <span class="play" aria-hidden="true"></span>
-              </div>
-              <p class="card-t">YouTube Fan Fest India 2024</p>
-              <p class="card-c">Creative lead · 10M+ impressions</p>
-            </a>
-            <a class="card" href="https://www.youtube.com/watch?v=1c-KjlPtZXY" target="_blank" rel="noopener">
-              <div class="card-thumb">
-                <img src="https://img.youtube.com/vi/1c-KjlPtZXY/hqdefault.jpg" data-yt="1c-KjlPtZXY" alt="Amazon Prime Video brand campaign"
-                     loading="lazy" referrerpolicy="no-referrer">
-                <span class="play" aria-hidden="true"></span>
-              </div>
-              <p class="card-t">Amazon Prime Video</p>
-              <p class="card-c">Brand campaign</p>
-            </a>
-            <a class="card" href="https://www.youtube.com/watch?v=BJy6DdRYr1I" target="_blank" rel="noopener">
-              <div class="card-thumb">
-                <img src="https://img.youtube.com/vi/BJy6DdRYr1I/hqdefault.jpg" data-yt="BJy6DdRYr1I" alt="AMD brand campaign"
-                     loading="lazy" referrerpolicy="no-referrer">
-                <span class="play" aria-hidden="true"></span>
-              </div>
-              <p class="card-t">AMD</p>
-              <p class="card-c">Brand campaign</p>
-            </a>
+        <div class="strand">
+          <ul>
+            <li>Built and ran <b>Buzzy Tales</b> end to end: pitching, staffing, and shipping brand and performance campaigns for <b>Amazon Prime Video, Krafton, Realme, AMD and Junglee Poker</b>.</li>
+            <li>Creative lead on <b>YouTube Fan Fest India 2024</b> — 10M+ organic impressions, 300K+ concurrent viewers.</li>
+            <li>Ran a global creative and marketing team across the US, Netherlands and India for FHD Media. Scaled their YouTube channel from <b>600K to 1.2M subscribers in six months</b>.</li>
+          </ul>
+
+          <div class="reel">
+            <p class="reel-label">Selected work</p>
+            <div class="reelgrid">
+              <a class="card" href="https://www.youtube.com/watch?v=C47xBYRls9g" target="_blank" rel="noopener">
+                <div class="card-thumb">
+                  <img src="https://img.youtube.com/vi/C47xBYRls9g/hqdefault.jpg" data-yt="C47xBYRls9g"
+                       alt="YouTube Fan Fest India 2024" loading="lazy" referrerpolicy="no-referrer">
+                  <span class="play" aria-hidden="true"></span>
+                </div>
+                <p class="card-t">YouTube Fan Fest India 2024</p>
+                <p class="card-c">Creative lead · 10M+ impressions</p>
+              </a>
+              <a class="card" href="https://www.youtube.com/watch?v=1c-KjlPtZXY" target="_blank" rel="noopener">
+                <div class="card-thumb">
+                  <img src="https://img.youtube.com/vi/1c-KjlPtZXY/hqdefault.jpg" data-yt="1c-KjlPtZXY"
+                       alt="Amazon Prime Video brand campaign" loading="lazy" referrerpolicy="no-referrer">
+                  <span class="play" aria-hidden="true"></span>
+                </div>
+                <p class="card-t">Amazon Prime Video</p>
+                <p class="card-c">Brand campaign</p>
+              </a>
+              <a class="card" href="https://www.youtube.com/watch?v=BJy6DdRYr1I" target="_blank" rel="noopener">
+                <div class="card-thumb">
+                  <img src="https://img.youtube.com/vi/BJy6DdRYr1I/hqdefault.jpg" data-yt="BJy6DdRYr1I"
+                       alt="AMD brand campaign" loading="lazy" referrerpolicy="no-referrer">
+                  <span class="play" aria-hidden="true"></span>
+                </div>
+                <p class="card-t">AMD</p>
+                <p class="card-c">Brand campaign</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- TVF -->
-    <section class="act wrap" id="tvf">
-      <div class="act-head">
-        <p class="slug"><span>Apr 2018 — Jul 2020</span></p>
+  <!-- TVF -->
+  <section class="band act" id="tvf">
+    <div class="container act-in">
+      <div class="act-meta">
+        <span>Apr 2018 — Jul 2020</span>
+      </div>
+      <div class="act-body">
         <h2 class="org">The Viral Fever</h2>
         <p class="role">Writer &amp; Content Strategist</p>
-        <p class="lede">Where storytelling comes from.</p>
-      </div>
+        <p class="lede">Where the storytelling comes from.</p>
 
-      <div class="strand">
-        <ul>
-          <li>Wrote <a class="ilink" href="https://www.imdb.com/title/tt8809646/" target="_blank" rel="noopener">College Romance</a> for SonyLIV — <b>Filmfare nominated</b> (the Indian equivalent of the Oscars), 8.3 on IMDb.</li>
-          <li>Ran a data-informed YouTube content strategy: 10M+ views and <b>150% YoY subscriber growth</b>.</li>
-        </ul>
-      </div>
+        <div class="strand">
+          <ul>
+            <li>Wrote <a class="ilink" href="https://www.imdb.com/title/tt8809646/" target="_blank" rel="noopener">College Romance</a> for SonyLIV — <b>Filmfare nominated</b> (the Indian equivalent of the Oscars), 8.3 on IMDb.</li>
+            <li>Ran a data-informed YouTube content strategy: 10M+ views and <b>150% YoY subscriber growth</b>.</li>
+          </ul>
+        </div>
 
-      <div class="strand">
-        <h3>Education</h3>
-        <ul>
-          <li><b>MBA, Strategic Marketing &amp; Communications</b> — MICA, Ahmedabad</li>
-        </ul>
+        <div class="strand">
+          <h3>Education</h3>
+          <ul>
+            <li><b>MBA, Strategic Marketing &amp; Communications</b> — MICA, Ahmedabad</li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- END CARD -->
-    <section class="endcard">
-      <div class="wrap">
-        <p class="eyebrow">Fun facts</p>
-        <ul>
-          <li>Was the first Hindi voice of Shin Chan — which remains the most impressive thing here, if you were an Indian kid in the 2000s.</li>
-          <li>Run a YouTube channel with 10K subscribers. Proof that some things do scale, just slowly.</li>
-        </ul>
-      </div>
-    </section>
+  <!-- END CARD -->
+  <section class="endcard">
+    <div class="container band-in">
+      <p class="slabel">Fun facts</p>
+      <ul>
+        <li>Was the first Hindi voice of Shin Chan — which remains the most impressive thing here, if you were an Indian kid in the 2000s.</li>
+        <li>Run a YouTube channel with 10K subscribers. Proof that some things do scale, just slowly.</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- CONTACT -->
-    <section class="contact wrap" id="contact">
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container contact-in">
       <p class="eyebrow">Get in touch</p>
+      <h2 class="hook">Let’s talk about what you’re <em>trying to grow</em>.</h2>
       <div class="cta-row">
         <a class="cta solid" href="mailto:ahuja.aakashmail@gmail.com">ahuja.aakashmail@gmail.com</a>
         <a class="cta" href="https://www.linkedin.com/in/aakash-ahuja-55a30a114/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="cta" href="Aakash-Ahuja-CV.pdf" download>Download CV</a>
       </div>
       <p class="colophon">Aakash Ahuja · Bangalore, India</p>
-    </section>
+    </div>
+  </section>
 
-  </main>
-</div>
+</main>
 
 <script>
 (function(){
-  var fill = document.getElementById('fill');
-  var ticks = Array.prototype.slice.call(document.querySelectorAll('.tick'));
-  var wide = window.matchMedia('(min-width:901px)');
-
-  function placeTicks(){
-    if(!wide.matches) return;
-    var line = document.querySelector('.scrubber-line');
-    var lineTop = line.getBoundingClientRect().top;
-    var height = line.offsetHeight;
-    var docSpan = Math.max(document.body.scrollHeight - window.innerHeight, 1);
-    ticks.forEach(function(t){
-      var sec = document.getElementById(t.dataset.sec);
-      if(!sec) return;
-      var pct = Math.min(sec.offsetTop / docSpan, 1);
-      t.style.position = 'fixed';
-      t.style.top = (lineTop + pct * height) + 'px';
-    });
-  }
+  var bar   = document.getElementById('progress');
+  var links = Array.prototype.slice.call(document.querySelectorAll('.topnav a'));
 
   function onScroll(){
-    var span = Math.max(document.body.scrollHeight - window.innerHeight, 1);
-    var pct = Math.min(Math.max(window.scrollY / span, 0), 1);
-    if(wide.matches){
-      var h = document.querySelector('.scrubber-line').offsetHeight;
-      fill.style.height = (pct * h) + 'px';
-      fill.style.width = '1px';
-    } else {
-      fill.style.width = (pct * 100) + '%';
-      fill.style.height = '3px';
-    }
-    placeTicks();
+    var span = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
+    var pct  = Math.min(Math.max(window.scrollY / span, 0), 1);
+    bar.style.width = (pct * 100) + '%';
 
-    var mid = window.scrollY + window.innerHeight * 0.4;
+    var mid = window.scrollY + window.innerHeight * 0.35;
     var current = null;
-    ticks.forEach(function(t){
-      var sec = document.getElementById(t.dataset.sec);
-      if(sec && sec.offsetTop <= mid) current = t;
+    links.forEach(function(a){
+      var sec = document.getElementById(a.dataset.sec);
+      if(sec && sec.offsetTop <= mid) current = a;
     });
-    ticks.forEach(function(t){ t.classList.toggle('on', t === current); });
+    links.forEach(function(a){ a.classList.toggle('on', a === current); });
   }
 
   window.addEventListener('scroll', onScroll, {passive:true});
@@ -684,22 +659,23 @@
   // Upgrade YouTube thumbnails to HD, but only where an HD version exists.
   // hqdefault.jpg always exists, so the visible image never breaks.
   Array.prototype.forEach.call(document.querySelectorAll('img[data-yt]'), function(img){
-    var id = img.getAttribute('data-yt');
     var hd = new Image();
     hd.referrerPolicy = 'no-referrer';
     hd.onload = function(){ if(hd.naturalWidth > 320){ img.src = hd.src; } };
-    hd.src = 'https://img.youtube.com/vi/' + id + '/maxresdefault.jpg';
+    hd.src = 'https://img.youtube.com/vi/' + img.getAttribute('data-yt') + '/maxresdefault.jpg';
   });
 
   // entrance
   var items = document.querySelectorAll('.rise');
   if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window){
     var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
     }, {threshold:.15});
-    items.forEach(function(el){ io.observe(el); });
+    Array.prototype.forEach.call(items, function(el){ io.observe(el); });
   } else {
-    items.forEach(function(el){ el.classList.add('in'); });
+    Array.prototype.forEach.call(items, function(el){ el.classList.add('in'); });
   }
 })();
 </script>
