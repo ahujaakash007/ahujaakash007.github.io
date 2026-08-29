@@ -28,7 +28,7 @@ Then open http://localhost:4173
 | --- | --- |
 | `index.html` | The entire site |
 | `og.png` | 1200×630 link-preview image (LinkedIn / WhatsApp / X) |
-| `Aakash-Ahuja-CV.pdf` | Linked by the "Download CV" button — **not yet added** |
+| `Aakash-Ahuja-CV.pdf` | Linked by the "Download CV" button |
 
 ## Notes
 
