@@ -33,18 +33,28 @@ Then open http://localhost:4173
 
 ## Palette
 
-Defined once in the `:root` block at the top of `index.html` — change these six values and
-the whole site follows:
+Sampled from [sarvam.ai](https://www.sarvam.ai/). Defined once in the `:root` block at the top
+of `index.html` — change these and the whole site follows:
 
 | Token | Value | Role |
 | --- | --- | --- |
-| `--ink` | `#15100B` | warm espresso background |
-| `--ink-2` | `#1D160E` | tinted band (Fun facts) |
-| `--bone` | `#F5EDE0` | body text |
-| `--mute` | `#9C8B78` | labels, captions |
-| `--hot` | `#FF8A3D` | tangerine accent |
+| `--paper` | `#FFFFFF` | page background |
+| `--surface` | `#F5F5F5` | tinted band, card wells, secondary pills |
+| `--ink` | `#1F1F1F` | headings |
+| `--ink-2` | `#3D3D3D` | body text |
+| `--muted` | `#666666` | labels, captions |
+| `--accent` | `#212191` | Sarvam indigo |
+| `--peri-2` | `#D5E0FE` | periwinkle highlight behind bold text |
+| `--btn` | `#2A2C33` | primary pill button |
 
-Contrast on the background: body 16.3:1, muted 5.7:1, tangerine 8.1:1 — all WCAG AA.
+The hero bloom (`body::before`) is a radial gradient stepping peach `#EFAF80` through
+periwinkle `#C1CCF6` to white, matching Sarvam's hero.
+
+Type is **Inter Tight** (headings) and **Inter** (body). Sarvam itself uses Matter and
+Season Mix, both commercial licences — Inter is the closest freely available match.
+
+Contrast on white: headings 16.5:1, body 10.9:1, muted 5.7:1, indigo 12.4:1. The indigo
+holds 7.9:1 against the periwinkle band, so the eyebrow stays legible over the gradient.
 
 ## Notes
 
