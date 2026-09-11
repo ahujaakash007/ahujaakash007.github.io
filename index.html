@@ -292,6 +292,22 @@
   .reel-video{width:100%; display:block; margin-top:1.1rem; border:1px solid var(--rule); border-radius:6px; aspect-ratio:16/9}
   .reel-cap{font-size:.7rem; letter-spacing:.06em; color:var(--muted); margin:.7rem 0 0}
 
+  /* ---------- inline films (square, self-hosted) ---------- */
+  .filmgrid{display:flex; flex-wrap:wrap; gap:1.4rem; margin-top:1.4rem}
+  .film{margin:0; flex:1 1 260px; max-width:352px}
+  .film video{
+    display:block; width:100%;
+    /* height:auto is required — the height attribute is a presentational hint
+       that otherwise wins over aspect-ratio and leaves the box 720px tall */
+    height:auto; aspect-ratio:1/1; object-fit:cover;
+    background:var(--surface);
+    border:1px solid var(--rule); border-radius:6px;
+  }
+  .film figcaption{
+    font-size:.63rem; font-weight:500; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--muted); margin-top:.7rem;
+  }
+
   /* ---------- end card ---------- */
   .endcard{background:var(--surface); border-top:1px solid var(--rule)}
   .endcard .wrap{padding-block:clamp(2rem,4.5vh,3rem)}
@@ -496,6 +512,23 @@
               <p class="card-t">Read more about the AI show</p>
               <p class="card-c">LinkedIn · Kuku TV</p>
             </a>
+          </div>
+
+          <div class="filmgrid">
+            <figure class="film">
+              <video controls playsinline preload="metadata" poster="work/bddb-1.jpg" width="720" height="720">
+                <source src="work/bddb-1.mp4" type="video/mp4">
+                Your browser can't play this video. <a href="work/bddb-1.mp4">Download it instead.</a>
+              </video>
+              <figcaption>Billion Dollar Delivery Boy — 5:46</figcaption>
+            </figure>
+            <figure class="film">
+              <video controls playsinline preload="metadata" poster="work/bddb-2.jpg" width="720" height="720">
+                <source src="work/bddb-2.mp4" type="video/mp4">
+                Your browser can't play this video. <a href="work/bddb-2.mp4">Download it instead.</a>
+              </video>
+              <figcaption>Billion Dollar Delivery Boy — 8:05</figcaption>
+            </figure>
           </div>
         </div>
 

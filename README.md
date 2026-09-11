@@ -30,6 +30,8 @@ Then open http://localhost:4173
 | `og.png` | 1200×630 link-preview image (LinkedIn / WhatsApp / X) |
 | `Aakash-Ahuja-CV.pdf` | Linked by the "Download CV" button |
 | `aakash.jpg` | Portrait in the contact section (640px wide, watermark cropped) |
+| `work/bddb-*.mp4` | Self-hosted films in "Made with the pipeline" (720×720, faststart) |
+| `work/bddb-*.jpg` | Poster frames for those films |
 
 ## Palette
 
@@ -55,6 +57,18 @@ Season Mix, both commercial licences — Inter is the closest freely available m
 
 Contrast on white: headings 16.5:1, body 10.9:1, muted 5.7:1, indigo 12.4:1. The indigo
 holds 7.9:1 against the periwinkle band, so the eyebrow stays legible over the gradient.
+
+## Video
+
+Films in "Made with the pipeline" are self-hosted from `work/`. Two rules when adding more:
+
+- Remux with `ffmpeg -i in.mp4 -c copy -movflags +faststart out.mp4`. Without `faststart`
+  the `moov` atom sits at the end of the file and the browser must download the whole thing
+  before it will play.
+- Always give the `<video>` a `poster` and `preload="metadata"`, so the page costs a few KB
+  until someone actually presses play.
+- In CSS the video needs `height:auto`. The `height` HTML attribute is a presentational hint
+  that otherwise beats `aspect-ratio` and leaves the box at its intrinsic height.
 
 ## Notes
 
