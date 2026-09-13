@@ -190,6 +190,8 @@
     vertical-align:.28em;
   }
   .metric.lead .metric-v{color:var(--accent)}
+  /* seven metrics: the last one fills the final row instead of leaving two empty cells */
+  .metric.wide{grid-column:1 / -1}
   .metric-n{font-size:.95rem; line-height:1.55; color:var(--muted); margin:0; max-width:32ch}
   .metric-n b{color:var(--ink); font-weight:600}
 
@@ -336,6 +338,7 @@
   .endcard ul{list-style:none; margin:1.2rem 0 0; padding:0; display:grid; gap:1rem}
   @media (min-width:760px){ .endcard ul{grid-template-columns:1fr 1fr; gap:1.4rem 3rem} }
   .endcard li{padding-left:1.5rem; position:relative; max-width:48ch; color:var(--ink-2)}
+  .endcard li b{font-weight:600; color:var(--ink); box-shadow:inset 0 -.4em 0 var(--peri-2)}
   .endcard li::before{
     content:""; position:absolute; left:0; top:.78em;
     width:.72rem; height:1px; background:var(--accent); opacity:.75;
@@ -434,7 +437,7 @@
     <section class="hero wrap">
       <p class="eyebrow rise">Growth &amp; performance creative</p>
       <h1 class="hook rise">Growth is a <em>creative</em> problem.</h1>
-      <p class="standfirst rise"><span class="name">Aakash Ahuja</span> — founding team at Kuku TV, the #1 most downloaded short-drama app in the world, per Sensor Tower. I built the growth engine that took it from zero to $100M ARR, and led the launch into the US.</p>
+      <p class="standfirst rise"><span class="name">Aakash Ahuja</span> — founding team at Kuku TV, which hit #1 most downloaded short-drama app in the world in Q1 2025, per Sensor Tower. I built the growth engine that took it from zero to $100M ARR, and led the launch into the US.</p>
     </section>
 
     <!-- SCOREBOARD -->
@@ -444,7 +447,7 @@
         <div class="metric lead">
           <p class="metric-k">Revenue built</p>
           <p class="metric-v">$100M <small>ARR</small></p>
-          <p class="metric-n">From <b>zero</b>. Kuku TV is now the <b>#1 most downloaded</b> short-drama app in the world, per Sensor Tower.</p>
+          <p class="metric-n">From <b>zero</b>. Kuku TV became the <b>#1 most downloaded</b> short-drama app in the world in <b>Q1 2025</b>, per Sensor Tower.</p>
         </div>
 
         <div class="metric lead">
@@ -477,6 +480,12 @@
           <p class="metric-n">Deployed into original programming that <b>topped the charts</b> and pulled subscribers in.</p>
         </div>
 
+        <div class="metric wide">
+          <p class="metric-k">Organic installs</p>
+          <p class="metric-v">2× <small>from UGC</small></p>
+          <p class="metric-n">Doubled with <b>UGC campaigns</b> — creators supplying the volume instead of paid media.</p>
+        </div>
+
       </div>
     </section>
 
@@ -486,7 +495,6 @@
         <p class="slug"><span class="live">On air</span><span>Aug 2024 — present</span><span>Founding team</span></p>
         <h2 class="org">Kuku TV</h2>
         <p class="role">Director, Growth &amp; Marketing</p>
-        <p class="lede">I own the full growth engine across India, and I led the US launch.</p>
       </div>
 
       <div class="strand">
@@ -494,14 +502,14 @@
         <ul>
           <li>Reduced CAC by <b>80% by implementing a new creative strategy</b>. The lever was never the bidding — it was what the ad said in the first three seconds.</li>
           <li>Built and lead the growth function from the first hire: in-house performance marketers plus external agencies, running acquisition across Meta, Google and Snapchat.</li>
-          <li>Own the commissioning calls on the content slate and the <b>$6.5M a year</b> behind it — which shows get made, judged against what the acquisition data says audiences actually finish.</li>
+          <li>Own the commissioning calls on the content slate and the <b>$6.5M a year</b> budget behind it — programming that <b>doubled the app’s average engagement</b>.</li>
         </ul>
       </div>
 
       <div class="strand">
         <h3>Creative as the growth lever</h3>
         <ul>
-          <li>Operate at a volume of <b>5,000 ad creatives a month</b>. Ship wide, kill fast, scale those that work — testing velocity is the strategy, not a side effect of it.</li>
+          <li>Operate at a volume of <b>5,000 ad creatives a month</b>. Ship wide, kill fast, scale those that work.</li>
           <li>Architected the AI creative pipeline behind that volume — Midjourney, Runway ML, Flux, ElevenLabs — so output scales without the team scaling with it.</li>
           <li>Head AI content creation for the platform: a fully AI-generated delivery pipeline that halved production time and cut content spend <b>75%</b>.</li>
         </ul>
@@ -563,7 +571,7 @@
         <h3>US market entry</h3>
         <ul>
           <li>Led the US launch across Meta, Google, Snapchat and TikTok, for both Kuku TV and Kuku FM.</li>
-          <li>Built an organic influencer engine driving installs at <b>near-zero CPA</b>.</li>
+          <li>Built an <b>organic UGC engine</b> driving installs at <b>near-zero CPA</b>.</li>
           <li>Closed content licensing deals across China, Spain and Indonesia.</li>
         </ul>
       </div>
@@ -648,7 +656,7 @@
       <div class="wrap">
         <p class="eyebrow">Fun facts</p>
         <ul>
-          <li>Was the first Hindi voice of Shin Chan — which remains the most impressive thing here, if you were an Indian kid in the 2000s.</li>
+          <li>Was the <b>first Hindi voice of Shin Chan</b>, which remains the most impressive thing here, if you were an Indian kid in the 2000s.</li>
           <li>Run a YouTube channel with 10K subscribers. Proof that some things do scale, just slowly.</li>
         </ul>
       </div>
